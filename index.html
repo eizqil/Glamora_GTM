@@ -13,6 +13,20 @@
   <script>
   window.dataLayer = window.dataLayer || [];
   </script>
+
+<script>
+(function(e,t,n,o){e.PeopleEventsObject=o;e[o]=e[o]||{init:function(t){e[o].apiKey=t},
+setPerson:function(t,n){e[o].person=t;e[o].personTtl=n},
+forgetPerson:function(){e[o].toForgetPerson=true},
+track:function(){(e[o].q=e[o].q||[]).push(arguments)},
+updatePerson:function(t){e[o].personToUpdate={person:t}},
+appendToList:function(t,n){e[o].attributeToAppend={attributeName:t,attribute:n}}};
+var r=t.createElement("script");
+var s=t.getElementsByTagName("script")[0];r.async=1;r.src=n;s.parentNode.insertBefore(r,s)})
+(window,document,'https://s3.eu-central-1.amazonaws.com/portal-cdn-production/people-events-sdk/pe.latest-2.js','pe');
+
+pe.init('5cf58d1f0a05eeac057c110e6365fff3-a0f8cff0-9c3a-4db8-8c92-ebab8a77eb04');
+</script>
   
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
